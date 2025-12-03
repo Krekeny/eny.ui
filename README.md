@@ -1,22 +1,6 @@
-![picture of storybook](https://github.com/user-attachments/assets/cf98766d-8b90-44ab-b718-94ab16e63205)
+# Eny.UI
 
-# getting started
-
-```sh
-npx create-expo-app --template expo-template-storybook AwesomeStorybook
-```
-
-or
-
-```sh
-yarn create expo-app --template expo-template-storybook AwesomeStorybook
-```
-
-# app
-
-```sh
-yarn start
-```
+View the live Storybook here: [https://krekeny.github.io/eny.ui/](https://krekeny.github.io/eny.ui/)
 
 # RN Storybook (ondevice)
 
