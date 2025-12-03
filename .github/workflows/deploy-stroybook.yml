@@ -3,7 +3,7 @@ name: Build and Publish Storybook to GitHub Pages
 on:
   push:
     branches:
-      - "feature/expo-storybook-starter#CU-86c6v1qva" # Replace with your default branch
+      - "main"
 
 permissions:
   contents: read
