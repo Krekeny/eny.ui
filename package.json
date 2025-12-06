@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "main": "expo-router/entry",
+  "react-native": "./index.ts",
+  "types": "./index.ts",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -14,23 +16,19 @@
     "storybook:web:serve": "npx http-server ./storybook-static",
     "storybook-generate": "sb-rn-get-stories",
     "storybook": "cross-env EXPO_PUBLIC_STORYBOOK_ENABLED='true' expo start",
-    "storybook:ios": "cross-env EXPO_PUBLIC_STORYBOOK_ENABLED='true' expo start --ios",
     "storybook:android": "cross-env EXPO_PUBLIC_STORYBOOK_ENABLED='true' expo start --android",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "generate": "node scripts/generate-index.js",
+    "prepack": "npm run generate"
   },
   "dependencies": {
     "@gorhom/bottom-sheet": "^5.1.8",
     "@react-native-async-storage/async-storage": "2.2.0",
     "@react-native-community/datetimepicker": "8.4.4",
     "@react-native-community/slider": "5.0.1",
-    "expo": "^54.0.22",
-    "expo-constants": "~18.0.10",
     "expo-linking": "~8.0.8",
     "expo-router": "~6.0.14",
     "expo-status-bar": "~3.0.8",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "react-native": "0.81.5",
     "react-native-gesture-handler": "~2.28.0",
     "react-native-reanimated": "~4.1.1",
     "react-native-safe-area-context": "~5.6.0",
@@ -59,10 +57,20 @@
     "eslint": "^9.33.0",
     "eslint-config-expo": "~10.0.0",
     "eslint-plugin-storybook": "^10.0.5",
+    "expo": "^54.0.22",
+    "expo-constants": "~18.0.10",
     "jiti": "^2.5.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native": "0.81.5",
     "storybook": "^10.0.5",
     "typescript": "~5.9.2",
     "vite": "^7.0.6"
+  },
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "*"
   },
   "resolutions": {
     "react-docgen-typescript": "2.2.2"
