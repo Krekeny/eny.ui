@@ -1,7 +1,3 @@
-# Eny.UI
-
-View the live Storybook here: [https://krekeny.github.io/eny.ui/](https://krekeny.github.io/eny.ui/)
-
 # RN Storybook (ondevice)
 
 In this template you can now run `yarn storybook` to start ondevice storybook or `yarn start` to start your expo app.
