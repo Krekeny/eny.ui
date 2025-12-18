@@ -23,8 +23,8 @@
   "scripts": {
     "lint": "eslint .",
     "generate": "node scripts/generate-index.js",
-    "prepack": "cd builder && bob build",
-    "build": "cd builder && bob build",
+    "prepack": "cd builder && npx bob build",
+    "build": "cd builder && npx bob build",
     "storybook": "cd demo && npm run storybook",
     "storybook:android": "cd demo && npm run storybook:android",
     "build-storybook": "cd demo && npm run build-storybook"

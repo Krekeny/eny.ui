@@ -28,6 +28,9 @@
     ]
   },
   "devDependencies": {
-    "react-native-builder-bob": "^0.40.16"
+    "react-native-builder-bob": "^0.40.16",
+    "typescript": "~5.9.2",
+    "@types/react": "~19.1.10",
+    "@types/react-native": "^0.73.0"
   }
 }
