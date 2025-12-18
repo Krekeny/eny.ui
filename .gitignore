@@ -1,5 +1,4 @@
 node_modules/
-.expo/
 dist/
 npm-debug.*
 *.jks
@@ -12,7 +11,7 @@ web-build/
 
 # macOS
 .DS_Store
-storybook-static/
+demo/storybook-static/
 
 .yarn/*
 !.yarn/patches
@@ -20,3 +19,8 @@ storybook-static/
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Demo specific
+demo/node_modules/
+demo/.expo/
+demo/.expo-shared/

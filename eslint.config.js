@@ -5,7 +5,12 @@ const storybook = require("eslint-plugin-storybook");
 
 module.exports = defineConfig([
   {
-    ignores: [".yarn/**", ".rnstorybook/storybook.requires.ts", ".expo/**/*"],
+    ignores: [
+      ".yarn/**",
+      ".rnstorybook/storybook.requires.ts",
+      ".expo/**/*",
+      "demo/**",
+    ],
   },
   expoConfig,
   storybook.configs["flat/recommended"],

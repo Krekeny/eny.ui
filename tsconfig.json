@@ -4,5 +4,5 @@
     "strict": true,
     "moduleResolution": "bundler"
   },
-  "include": [".storybook/**/*", ".rnstorybook/**/*", "**/*.ts", "**/*.tsx"]
+  "include": ["**/*.ts", "**/*.tsx"]
 }
