@@ -9,7 +9,7 @@ module.exports = defineConfig([
       ".yarn/**",
       ".rnstorybook/storybook.requires.ts",
       ".expo/**/*",
-      "demo/**",
+      "storybook/**",
     ],
   },
   expoConfig,

@@ -1,8 +1,8 @@
 const fs = require("fs");
 const path = require("path");
 
-const COMPONENTS_DIR = path.join(__dirname, "../components");
-const INDEX_FILE = path.join(__dirname, "../index.ts");
+const COMPONENTS_DIR = path.join(__dirname, "../src/components");
+const INDEX_FILE = path.join(__dirname, "../src/index.ts");
 
 const generateIndex = () => {
   if (!fs.existsSync(COMPONENTS_DIR)) {

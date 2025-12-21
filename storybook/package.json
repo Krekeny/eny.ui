@@ -1,8 +1,12 @@
 {
-  "name": "eny.ui-demo",
+  "name": "eny.ui-storybook",
   "version": "1.0.0",
   "private": true,
   "main": "expo-router/entry",
+  "overrides": {
+    "react": "19.1.0",
+    "react-native": "0.81.5"
+  },
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",

@@ -11,7 +11,7 @@ web-build/
 
 # macOS
 .DS_Store
-demo/storybook-static/
+storybook/storybook-static/
 
 .yarn/*
 !.yarn/patches
@@ -20,7 +20,9 @@ demo/storybook-static/
 !.yarn/sdks
 !.yarn/versions
 
-# Demo specific
-demo/node_modules/
-demo/.expo/
-demo/.expo-shared/
+# Storybook specific
+storybook/.expo/
+storybook/.expo-shared/
+
+# Build output
+lib/
