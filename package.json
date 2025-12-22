@@ -22,12 +22,15 @@
     "exclude": "**/*.stories.*"
   },
   "files": [
-    "src",
+    "storybook/src",
+    "storybook/tsconfig.json",
     "lib",
     "android",
     "ios",
     "cpp",
     "*.podspec",
+    "tsconfig.json",
+    "scripts",
     "!lib/typescript/example",
     "!android/build",
     "!ios/build",
@@ -38,6 +41,7 @@
   "scripts": {
     "generate": "node scripts/generate-index.js",
     "prepack": "npx bob build",
+    "postinstall": "npm run build",
     "build": "npx bob build",
     "storybook": "cd storybook && npm run storybook",
     "storybook:android": "cd storybook && npm run storybook:android",
