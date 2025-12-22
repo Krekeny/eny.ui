@@ -36,7 +36,6 @@
     "!**/__mocks__"
   ],
   "scripts": {
-    "lint": "eslint .",
     "generate": "node scripts/generate-index.js",
     "prepack": "npx bob build",
     "build": "npx bob build",
