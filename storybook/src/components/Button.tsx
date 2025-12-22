@@ -24,3 +24,5 @@ const styles = StyleSheet.create({
   },
   text: { color: "white", fontSize: 16, fontWeight: "bold" },
 });
+
+export default MyButton;

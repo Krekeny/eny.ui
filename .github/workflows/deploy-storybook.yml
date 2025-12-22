@@ -25,7 +25,7 @@ jobs:
 
       - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
         with:
-          install_command: npm install
-          build_command: npm run build-storybook
-          path: storybook-static
+          install_command: cd storybook && npm install
+          build_command: cd storybook && npm run build-storybook
+          path: storybook/storybook-static
           checkout: false
