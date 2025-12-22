@@ -10,8 +10,8 @@
     "source": "storybook/src",
     "output": "lib",
     "targets": [
-      "commonjs",
       "module",
+      "commonjs",
       [
         "typescript",
         {
@@ -47,8 +47,10 @@
     "storybook:android": "cd storybook && npm run storybook:android",
     "build-storybook": "cd storybook && npm run build-storybook"
   },
+  "dependencies": {
+    "react-native-builder-bob": "^0.40.16"
+  },
   "devDependencies": {
-    "react-native-builder-bob": "^0.40.16",
     "typescript": "~5.9.2",
     "@types/react": "~19.1.10",
     "@types/react-native": "^0.73.0",
