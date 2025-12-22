@@ -10,8 +10,8 @@
     "source": "storybook/src",
     "output": "lib",
     "targets": [
-      "commonjs",
       "module",
+      "commonjs",
       [
         "typescript",
         {
