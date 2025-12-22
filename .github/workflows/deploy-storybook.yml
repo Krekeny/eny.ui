@@ -23,9 +23,19 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Install root dependencies
+        run: npm install
+
+      - name: Build Storybook
+        run: |
+          cd storybook
+          npm install
+          npm run build-storybook
+          ls -la storybook-static || echo "Build output not found!"
+
       - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
         with:
-          install_command: cd storybook && npm install
-          build_command: cd storybook && npm run build-storybook
+          install_command: echo "Already built"
+          build_command: echo "Already built"
           path: storybook/storybook-static
           checkout: false
