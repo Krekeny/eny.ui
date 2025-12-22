@@ -23,6 +23,7 @@ storybook/storybook-static/
 # Storybook specific
 storybook/.expo/
 storybook/.expo-shared/
+.expo-shared/assets.json
 
 # Build output
 lib/
